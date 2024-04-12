@@ -1,6 +1,5 @@
 import { RequestHandler } from "express";
 import NoteModel from "../models/note";
-
 export const createNote: RequestHandler = async (req, res, next) => {
   const { title, text } = req.body;
 
